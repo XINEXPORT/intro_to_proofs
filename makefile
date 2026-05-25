@@ -27,7 +27,7 @@ sets:
 
 all: ${DIRS}
 
-# Clean commands for each and directories
+# Clean commands for each and all directories
 # Commands must be ran in the directory where the makefile is located
 cleanfinite:
 	cd finite_infinite_sets && rm -f *.aux *.log *.pdf
