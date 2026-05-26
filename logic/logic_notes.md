@@ -93,7 +93,7 @@ For real number x, if $x^2$ is positive, then x is positive
 
 **Types of Propositions**
 - **Theorem** a principle proposition we are trying to prove
-- **Lemma** a proposition we prove before out theorem. Then we use that
+- **Lemma** a proposition we prove before our theorem. Then we use that
 proposition as a step towards proving a theorem.
 - **Corollary** a proposition whose proof follows from our theorem. This is
 a intermediate consequence of the theorem.
