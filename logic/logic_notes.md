@@ -21,8 +21,8 @@ German
 Definition: The set of all numbers that can be written as a fraction where there
 is an integer on top and a nonzeo integer on the bottom.
 - Written as a doublestrike Q for quotient, $\mathbb{Q}$
-Example:
-$\left\{\frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{Z}, b \neq 0\right\}$
+- Example:
+$\left\lbrace\frac{a}{b} \mid a \in \mathbb{Z}, b \in \mathbb{Z}, b \neq 0\right\rbrace$
 
 ## Real Numbers
 Definition: The set of all numbers which can b written as a decimal expansion
@@ -32,7 +32,7 @@ Definition: The set of all numbers which can b written as a decimal expansion
 ## Complex Numbers
 Definition: The set of complex number is the set
 - Written as doublestrike C, $\mathbb{C}$
-Example:
+- Example:
 $\{a + bi \mid a \in \mathbb{R}, b \in \mathbb{R}\}$
 where $i = \sqrt{-1}$
 
