@@ -58,11 +58,11 @@ where $i = \sqrt{-1}$
 Definition: A definition is labeling a characteristic or property with a
 specific term.
 - Example:
-An integer is called even if two divides the integer with no remainder
+An integer is called even if two divides the integer with no remainder <br>
 $x \in \mathbb{Z}$ is even if $2 \mid x$
 
 - Example:
-An angle is called acute if its radian measure is less than $\frac{\pi}{2}$
+An angle is called acute if its radian measure is less than $\frac{\pi}{2}$ <br>
 $\angle A$ is acute if $0 < m\angle A < \frac{\pi}{2}$
 
 **Definitions Work in Both Directions**
@@ -71,10 +71,11 @@ directions.
 - this doesn't require a proof because it is a label
 - An example would be:
 >If an integer is divisible by two with no remainder, then the integer is even.
+>
 >If an integer is even, then it is divisible by two with no remainder.
 
 ### Proposition
-Definition: a proposition is a statement that must be proven.
+Definition: a proposition is a statement that must be proven. <br>
 It is often of the form "If an object has these properties, then some object
 has these other certain properties."
 - Example:
