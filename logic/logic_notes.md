@@ -6,6 +6,7 @@
 ## Contents
 - [Special Sets of Numbers](#special-sets-of-numbers)
 - [Proposition Terms](#proposition-terms)
+- [Logical Statements](#logical-statements)
 
 ---
 
@@ -117,6 +118,45 @@ different set of axioms to prove the theorem.
 
 - Is it possible to not use any axioms to prove an axiom? No, a foundational
 set of axioms are required
+
+</details>
+
+<details>
+<summary><strong>Logical Statements</strong></summary>
+
+### Logical Statements
+Definition: A logical statement is a statement which can be determined as
+true or false
+
+Definition: The property of being true or false as a logical statement is a
+truth value.
+
+Examples:
+- I have a pen in my backpack.
+- It is raining right now.
+
+### What is not a logical statement?
+- not a statement
+- no truth value
+- poorly defined
+- indeterminate truth value
+
+Examples:
+- "If n is even"
+- "Never in my life have I ever"
+- "Where are you?
+- "Holy cow!"
+- Let $x \in \mathbb{R}$ (x belongs to R)
+
+**Poorly Defined Terms**
+- Example: Today is a lovely day
+ - Not well defined because everyone's lovely day could be different
+- 3 + 4i is a perfect square
+ - perfect square is a term for integers, not complex numbers
+
+**Indeterminate Truth**
+- There is intelligent life in the universe somewhere other than Earth
+ - Could be both true and false
 
 </details>
 
