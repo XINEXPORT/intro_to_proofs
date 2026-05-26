@@ -105,7 +105,7 @@ Definition: an axiom or a postulate is a proposition that we take as true
 without a proof.
 - Example:
 Any line segment can be extended infinitely into a line
-- Example: The Trichotomy Law
+- Example: The Trichotomy Law <br>
 For any two real numbers x and y exactly one of the following is true:
 - x > y
 - x < y
