@@ -9,6 +9,7 @@
 - [Logical Statements](#logical-statements)
 - [Logical Formula and Truth Tables](#logical-formula-and-truth-tables)
 - [Conjuction](#conjunction)
+- [Disjuction](#disjunction)
 
 ---
 
@@ -152,13 +153,13 @@ Examples:
 
 **Poorly Defined Terms**
 - Example: Today is a lovely day
- - Not well defined because everyone's lovely day could be different
+    - Not well defined because everyone's lovely day could be different
 - 3 + 4i is a perfect square
- - perfect square is a term for integers, not complex numbers
+    - perfect square is a term for integers, not complex numbers
 
 **Indeterminate Truth**
 - There is intelligent life in the universe somewhere other than Earth
- - Could be both true and false
+    - Could be both true and false
 
 </details>
 
@@ -195,6 +196,7 @@ Numerical Operations:
 - Subtract
 - Multiply
 - Divide
+<br>
 Logical Operations:
 - Conjunction, AND, $\wedge$
 - Disjunction, OR, $\vee$
@@ -212,7 +214,9 @@ Let p be "Jennifer is allergic to peanuts" <br>
 Let q be "16 is a perfect square"
 
 > p OR NOT q
+>
 > or
+>
 > $p \lor (\neg q)$
 
 ### Truth Tables to Describe Truth Values
@@ -272,7 +276,7 @@ to get all 16 combos with no duplicates
 <summary><strong>Conjunction</strong></summary>
 Definition: conjunction is the logical operator that corresponds to and in
 English. It combines 2 logical statements and its value is true only when
-both inputs are true.
+both inputs are true.<br>
 
 Written as $\wedge$
 
@@ -297,6 +301,7 @@ Truth table for conjunction:
 
 The following English sentences translate to p $\wedge$ q
 > Let p be 2 is even
+>
 > Let q be 2 is prime
 - 2 is even and its prime
 - 2 is even but its also prime
@@ -304,6 +309,65 @@ The following English sentences translate to p $\wedge$ q
 - 2 is an even prime number
 - While 2 is even, its also prime
 
+</details>
 
+<details>
+<summary><strong>Disjunction</strong></summary>
+Definition: disjunction is the logical operator that corresponds to the word
+or(inclusive). It combines 2 logical statements and its value is true when
+at least one of the inputs is true.
+
+Written as $\vee$
+
+### Trouble with OR
+Consider the following English sentences
+- On the game show, I hope I win a new car or a new computer
+- I will submit your grades tomorrow or the next day
+    - Doesn't mean the same thing
+
+### Inclusive OR
+- I hope I win a new car or I hope I win a new computer
+- Including the possibility of both also called and/or
+
+## Exclusive OR
+- For dinner, I will make tacos or I will make pad thai
+- Excluding the possibility of both. It means one or the other, but not both.
+
+### Disjunction is the Inclusive OR
+Considering the following:
+> let p be 2 is even
+>
+> let q be 2 is prime
+
+Is the following sentence true or false? true
+
+> let p be 3 is even
+>
+> let q be 3 is prime
+
+Is the following sentence true or false? true
+
+> let p be 9 is even
+>
+> let q be 9 is prime
+
+Is the following sentence true or false? false
+
+Truth table for disjunction:
+| p | q | p ∨ q |
+|---|---|-------|
+| T | T |   T   |
+| T | F |   T   |
+| F | T |   T   |
+| F | F |   F   |
+
+The following English sentences translate to p $\vee$ q
+> Let p be 2 is even
+>
+> Let q be 2 is prime
+- 2 is even or its prime
+- 2 is even and/or its prime
+- Either 2 is an even number or its a prime number
+- Either 2 is an even number or its a prime number or both
 
 </details>
