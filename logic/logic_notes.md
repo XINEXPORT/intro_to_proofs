@@ -192,11 +192,13 @@ because it has a truth value.
 
 ### Operations
 Numerical Operations:
-- Add,
+- Add
 - Subtract
 - Multiply
 - Divide
+
 <br>
+
 Logical Operations:
 - Conjunction, AND, $\wedge$
 - Disjunction, OR, $\vee$
