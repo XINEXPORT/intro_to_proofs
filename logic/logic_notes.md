@@ -10,6 +10,7 @@
 - [Logical Formula and Truth Tables](#logical-formula-and-truth-tables)
 - [Conjuction](#conjunction)
 - [Disjuction](#disjunction)
+- [Negation](#negation)
 
 ---
 
@@ -371,5 +372,54 @@ The following English sentences translate to p $\vee$ q
 - 2 is even and/or its prime
 - Either 2 is an even number or its a prime number
 - Either 2 is an even number or its a prime number or both
+
+</details>
+
+<details>
+<summary><strong>Negation</strong></summary>
+Definition: negation is the logical operator that corresponds to the word not.
+It takes one logical statement and switches its truth value to the opposite.
+
+Written as $\neg$
+
+### Binary vs. Unary Operations
+Definition: a binary operation take 2 inputs and gives one output
+
+- Examples:
+- Addition 3 + 4
+- Composition of functions $(f \circ g)(x)$
+- Conjunction p $\wedge$ q
+- Disjunction p $\vee$ q
+
+Definition: a unary operation takes one input and gives one output
+- Examples:
+- Square root $\sqrt{7}$
+- Reciprocating a number $4^{-1}$
+- Transposing a matrix $A^T$
+- Negation $\neg{p}$
+
+### NOT in English
+Consider the following:
+> Let r be 3 is even
+>
+> Let s be 3 is prime
+
+Are the following sentences true or false? true
+- 3 is not even
+- 3 is not prime
+
+Truth table for negation:
+| p | ¬p |
+|---|-----|
+| T |  F  |
+| F |  T  |
+
+## Translating English that use negation
+> Let p be 2 is even
+
+The following English sentences translate to $\neg{p}$
+- 2 is not even
+- 2 isnt even
+- It is wrong to say that 2 is even
 
 </details>
