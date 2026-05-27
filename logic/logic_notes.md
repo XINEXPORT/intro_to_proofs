@@ -8,6 +8,7 @@
 - [Proposition Terms](#proposition-terms)
 - [Logical Statements](#logical-statements)
 - [Logical Formula and Truth Tables](#logical-formula-and-truth-tables)
+- [Conjuction](#conjunction)
 
 ---
 
@@ -264,5 +265,45 @@ n inputs, $2^n$ rows
 - where p alternates every 8 times
 
 to get all 16 combos with no duplicates
+
+</details>
+
+<details>
+<summary><strong>Conjunction</strong></summary>
+Definition: conjunction is the logical operator that corresponds to and in
+English. It combines 2 logical statements and its value is true only when
+both inputs are true.
+
+Written as $\wedge$
+
+### AND in English
+- let p be "2 is even"
+- let q be "2 is prime"
+
+Is the following sentence true or false? true, p $\wedge$ q
+
+- let p be "3 is even"
+- let q be "3 is prime"
+
+Is the following sentence true or false? false
+
+Truth table for conjunction:
+| p | q | p ∧ q |
+|---|---|-------|
+| T | T |   T   |
+| T | F |   F   |
+| F | T |   F   |
+| F | F |   F   |
+
+The following English sentences translate to p $\wedge$ q
+> Let p be 2 is even
+> Let q be 2 is prime
+- 2 is even and its prime
+- 2 is even but its also prime
+    - 'but' also means 'and' because it is unexpected
+- 2 is an even prime number
+- While 2 is even, its also prime
+
+
 
 </details>
