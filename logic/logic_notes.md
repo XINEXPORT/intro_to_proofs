@@ -7,6 +7,7 @@
 - [Special Sets of Numbers](#special-sets-of-numbers)
 - [Proposition Terms](#proposition-terms)
 - [Logical Statements](#logical-statements)
+- [Logical Formula and Truth Tables](#logical-formula-and-truth-tables)
 
 ---
 
@@ -160,3 +161,108 @@ Examples:
 
 </details>
 
+<details>
+<summary><strong>Logical Formula and Truth Tables</strong></summary>
+
+### Can we combine logical statements into bigger logical statements?
+Definition: a logical formula is a statement which combines logical statements,
+but which still has a truth value which can be determined. Also known as a
+logical expression or a compound logical statement.
+
+Example:
+- 7 is even
+- 7 is prime
+
+Combinations:
+- 7 is even and 7 is prime
+- 7 is not even or 7 is prime
+- Neither is 7 even nor is it prime
+
+### Compare to Numerical Expressions
+- 3, 5, 7 are all numbers
+- (3-5) * 7 is  numerical expression or a numerical formula
+- The numerical expression is equivalent to the number 14 after doing calculations.
+
+### Compare to Analogy
+- "I own a cat" is a logical statement as is "3 is a negative number".
+- "I own a cat and 3 is a negative number" is a logical expression or formula
+because it has a truth value.
+
+### Operations
+Numerical Operations:
+- Add,
+- Subtract
+- Multiply
+- Divide
+Logical Operations:
+- Conjunction, AND, $\wedge$
+- Disjunction, OR, $\vee$
+- Implication, IF/THEN, $\Rightarrow$
+- Negation, NOT, $\neg$
+- Biconditional, IF AND ONLY IF, $\Leftrightarrow$
+
+### Symbolic Logic
+Initially, people had to write a sentence to write an equation pre Descartes
+Now we use symbols, such as x + y
+
+We can use symbolic notation for logic:
+
+Let p be "Jennifer is allergic to peanuts" <br>
+Let q be "16 is a perfect square"
+
+> p OR NOT q
+> or
+> $p \lor (\neg q)$
+
+### Truth Tables to Describe Truth Values
+Let p and q be logical statements <br>
+
+Let function F(p,q) be a logical formula that combines statements p and q
+
+Summarize all the possible truth values for F:
+
+| p | q | F(p, q) |
+|---|---|---------|
+| T | T |    ?    |
+| T | F |    ?    |
+| F | T |    ?    |
+| F | F |    ?    |
+
+How many rows do I need?
+1 input, 1 row
+2 inputs, 2 rows
+n inputs, $2^n$ rows
+
+### Setting up inputs
+- one variable should alternate each row
+- next variable should alternate every 2 rows
+- next variable should alternate ever 4 rows
+- next variable should alternate ever 8 rows
+
+| p | q | r | s | F(p, q, r, s) |
+|---|---|---|---|---------------|
+| T | T | T | T |       ?       |
+| T | T | T | F |       ?       |
+| T | T | F | T |       ?       |
+| T | T | F | F |       ?       |
+| T | F | T | T |       ?       |
+| T | F | T | F |       ?       |
+| T | F | F | T |       ?       |
+| T | F | F | F |       ?       |
+| F | T | T | T |       ?       |
+| F | T | T | F |       ?       |
+| F | T | F | T |       ?       |
+| F | T | F | F |       ?       |
+| F | F | T | T |       ?       |
+| F | F | T | F |       ?       |
+| F | F | F | T |       ?       |
+| F | F | F | F |       ?       |
+
+- where s alternates every time
+- where r alternates every 2 times
+- where q alternates every 4 times
+- where p alternates every 8 times
+
+to get all 16 combos with no duplicates
+
+</details>
