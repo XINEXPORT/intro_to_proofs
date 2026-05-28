@@ -12,6 +12,7 @@
 - [Disjuction](#disjunction)
 - [Negation](#negation)
 - [Implication](#implication)
+- [Biconditional](#biconditional)
 
 ---
 
@@ -445,6 +446,9 @@ Written as $\Rightarrow$
 what would be required to make this statement false?
 - If i am not hungry, then I dont eat
 
+<br>
+<br>
+
 > Let r be "the positive integer n is prime"
 >
 > Let s b "the positive integer n is odd"
@@ -478,5 +482,57 @@ The following sentences translate to p $\Rightarrow$ q
 - A quadrilateral is a rectangle if it is a square
 - A quadrilateral is a square only if it is a rectangle
 - A quadrilateral being a square implies it is a rectangle
+
+</details>
+
+<details>
+<summary><strong>Biconditional</strong></summary>
+Definition: The biconditional is the logical operator that corresponds to the structure "if and only if". It combines 2 logical statements and its value is true when the two statements have the same truth value and is false when the two statements have opposite truth values.
+
+Written as $\Leftrightarrow$
+
+**Abbreviation**: The phrase 'if and only if' is common in math that it is abbreviated as "iff"
+
+<br>
+<br>
+
+> let p be "the integer n is even"
+>
+> let q be "the integer n + 1 is odd"
+
+Is the following sentence true or false? true
+
+> let r be "George Boole is sleeping"
+>
+> let s be "George Boole is lying down"
+
+Proposition: George Boole is sleeping if and only if George Boole is laying down.
+
+Is this true? false. George Boole could be sleeping in a chair.
+
+<br>
+
+Truth table for biconditional:
+| p | q | p ⇔ q |
+|---|---|-------|
+| T | T |   T   |
+| T | F |   F   |
+| F | T |   F   |
+| F | F |   T   |
+
+<br>
+
+> let p be $\Delta$ ABC is equilateral
+>
+> let q be $\Delta$ ABC is equiangular
+
+<br>
+
+The following sentences translate to p $\Leftrightarrow$ q
+- All equilateral triangles are equiangular and vice versa.
+- For a triangle, being equilateral is a necessary and sufficient condition for being equiangular
+- In a triangle, being equilateral is equivalent to being equiangular
+- $\Delta$ ABC is equilateral iff $\Delta$ ABC is equiangular
+
 
 </details>
