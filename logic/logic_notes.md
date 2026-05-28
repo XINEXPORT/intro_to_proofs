@@ -612,6 +612,87 @@ Step 4: Include p $\wedge$ q as a column to the existing table
 ### Example 2
 Consider ¬q ∨ p ⇔ ¬r ∨ q ∧ p
 
+Step 1:  Setup the $\neg$ q
+
+| p | q | r | ¬q |
+|---|---|---|----|
+| T | T | T |  F |
+| T | T | F |  F |
+| T | F | T |  T |
+| T | F | F |  T |
+| F | T | T |  F |
+| F | T | F |  F |
+| F | F | T |  T |
+| F | F | F |  T |
+
+Step 2:  Setup the $\neg$ r
+
+| p | q | r | ¬q | ¬r |
+|---|---|---|----|----|
+| T | T | T |  F |  F |
+| T | T | F |  F |  T |
+| T | F | T |  T |  F |
+| T | F | F |  T |  T |
+| F | T | T |  F |  F |
+| F | T | F |  F |  T |
+| F | F | T |  T |  F |
+| F | F | F |  T |  T |
+
+Step 3:  Setup the q ∧ p
+
+| p | q | r | ¬q | ¬r | q ∧ p |
+|---|---|---|----|----|-------|
+| T | T | T |  F |  F |   T   |
+| T | T | F |  F |  T |   T   |
+| T | F | T |  T |  F |   F   |
+| T | F | F |  T |  T |   F   |
+| F | T | T |  F |  F |   F   |
+| F | T | F |  F |  T |   F   |
+| F | F | T |  T |  F |   F   |
+| F | F | F |  T |  T |   F   |
+
+Step 4: Setup the (¬q) ∨ p
+
+| p | q | r | ¬q | ¬r | q ∧ p | (¬q) ∨ p |
+|---|---|---|----|----|-------|----------|
+| T | T | T |  F |  F |   T   |     T    |
+| T | T | F |  F |  T |   T   |     T    |
+| T | F | T |  T |  F |   F   |     T    |
+| T | F | F |  T |  T |   F   |     T    |
+| F | T | T |  F |  F |   F   |     F    |
+| F | T | F |  F |  T |   F   |     F    |
+| F | F | T |  T |  F |   F   |     T    |
+| F | F | F |  T |  T |   F   |     T    |
+
+Step 5: Setup the (¬r) ∨ (q ∧ p)
+
+| p | q | r | ¬q | ¬r | q ∧ p | (¬q) ∨ p | (¬r) ∨ (q ∧ p) | f(p,q,r) |
+|---|---|---|----|----|-------|----------|-----------------|----------|
+| T | T | T |  F |  F |   T   |    T     |        T        |    T     |
+| T | T | F |  F |  T |   T   |    T     |        T        |    T     |
+| T | F | T |  T |  F |   F   |    T     |        F        |    F     |
+| T | F | F |  T |  T |   F   |    T     |        T        |    T     |
+| F | T | T |  F |  F |   F   |    F     |        F        |    T     |
+| F | T | F |  F |  T |   F   |    F     |        T        |    F     |
+| F | F | T |  T |  F |   F   |    T     |        F        |    F     |
+| F | F | F |  T |  T |   F   |    T     |        T        |    T     |
+
+- The last column f(p,q,r) is the biconditional (⇔) between the two columns before it: (¬q) ∨ p and (¬r) ∨ (q ∧ p).
+
+- A biconditional is T when both sides match, F when they differ:
+
+| (¬q) ∨ p | (¬r) ∨ (q ∧ p)  | Result       |
+|----------|-----------------|--------------|
+|    T     |        T        | T — same     |
+|    T     |        T        | T — same     |
+|    T     |        F        | F — different|
+|    T     |        T        | T — same     |
+|    F     |        F        | T — same     |
+|    F     |        T        | F — different|
+|    T     |        F        | F — different|
+|    T     |        T        | T — same     |
+
+### Example 3
 
 
 </details>
