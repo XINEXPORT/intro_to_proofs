@@ -11,6 +11,7 @@
 - [Conjuction](#conjunction)
 - [Disjuction](#disjunction)
 - [Negation](#negation)
+- [Implication](#implication)
 
 ---
 
@@ -414,12 +415,61 @@ Truth table for negation:
 | T |  F  |
 | F |  T  |
 
-## Translating English that use negation
+### Translating English that use negation
 > Let p be 2 is even
 
 The following English sentences translate to $\neg{p}$
 - 2 is not even
 - 2 isnt even
 - It is wrong to say that 2 is even
+
+</details>
+
+<details>
+<summary><strong>Implication</strong></summary>
+Definition: implication is the logical operator that corresponds to the structure if/then. It combines 2 logical statements and its value is false only when the assumption is true and the conclusion is fare.
+
+Definition: in the statement "if p then q", the statement p is the assumption or the assertion. the statement q is the conclusion.
+
+Written as $\RightArrow$
+
+### IF/THEN in English
+
+> Let p "I am hungry"
+>
+> Let q be "I eat"
+
+what would be required to make this statement false?
+- If i am not hungry, then I dont eat
+
+> Let r be "the positive integer n is prime"
+>
+> Let s b "the positive integer n is odd"
+>
+> if a positive integer n is prime, then n is odd
+
+What would be required to disprove this proposition?
+- if 7 is prime, then 7 is odd true
+- if 3 is prime, then 3 is odd true
+- if 2 is prime, then 2 is odd?!? false
+
+Truth table for implication:
+| p | q | p ⇒ q |
+|---|---|-------|
+| T | T |   T   |
+| T | F |   F   |
+| F | T |   T   |
+| F | F |   T   |
+
+> Let p be "A quadrilateral is a square"
+>
+> Let q be "A quadrilateral is a rectangle"
+
+The following sentences translate to p $\RightArrow$ q
+- If a quadrilateral is a square, then it is a rectangle
+- All squares are rectangles
+- A quadrilateral is a rectangle if it is a square
+- A quadrilateral is a square only if it is a rectangle
+- A quadrilateral being a square implies it is a rectangle
 
 </details>
