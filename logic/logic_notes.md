@@ -13,6 +13,7 @@
 - [Negation](#negation)
 - [Implication](#implication)
 - [Biconditional](#biconditional)
+- [Multi Step Truth Tables](#multi-step-truth-tables)
 
 ---
 
@@ -447,7 +448,6 @@ what would be required to make this statement false?
 - If i am not hungry, then I dont eat
 
 <br>
-<br>
 
 > Let r be "the positive integer n is prime"
 >
@@ -533,6 +533,85 @@ The following sentences translate to p $\Leftrightarrow$ q
 - For a triangle, being equilateral is a necessary and sufficient condition for being equiangular
 - In a triangle, being equilateral is equivalent to being equiangular
 - $\Delta$ ABC is equilateral iff $\Delta$ ABC is equiangular
+
+</details>
+
+<details>
+<summary><strong>Multi Step Truth Tables</strong></summary>
+
+### Order of Logical Operations
+1. Parenthesis ()
+2. Negation $\neg$
+3. Conjunction $\wedge$
+4. Disjunction $\vee$
+5. Implication $\Rightarrow$
+6. Biconditional $\Leftrightarrow$
+
+### In what order do we perform logical operators?
+
+Consider the following formula:
+> [p $\wedge$ ($\neg$ r)] $\Rightarrow$ (q $\vee$ r)
+
+Evaluate the brackets and parenthesis first:
+1. $\neg$ r
+2. p $\wedge$ ($\neg$ r)
+3. q $\vee$ r
+4. [p $\wedge$ ($\neg$ r)] $\Rightarrow$ (q $\vee$ r)
+
+Consider the following formula:
+> $\neg$ q $\vee$ p $\Leftrightarrow$ $\neg$ r $\vee$ q $\wedge$ p
+
+Evaluate according to the order of logical operations:
+1. $\neg$ q
+2. $\neg$ r
+3. q $\wedge$ p
+4. ($\neg$ q) $\vee$ p
+5. ($\neg$ r) $\vee$ (q $\wedge$ p)
+6. [($\neg$ q) $\vee$ p] $\Leftrightarrow$ [($\neg$ r) $\vee$ (q $\wedge$ p)]
+
+### Example 1
+Create the complete truth table, including all intermediate columns, for the logical formula $(\neg p \wedge \neg q) \Rightarrow (p \wedge q)$. This formula has two inputs, so the truth table will need four rows.
+<br>
+
+Step 1 : Setup the $\neg$ p truth table
+
+| p | q | ¬p |
+|---|---|----|
+| T | T |  F |
+| T | F |  F |
+| F | T |  T |
+| F | F |  T |
+
+Step 2: Add the $\neg$ q column to the existing truth table
+
+| p | q | ¬p | ¬q |
+|---|---|----|----|
+| T | T |  F |  F |
+| T | F |  F |  T |
+| F | T |  T |  F |
+| F | F |  T |  T |
+
+Step 3: Include $\neg$ p $\wedge$ $\neg$ q as a column to the existing table
+
+| p | q | ¬p | ¬q | ¬p ∧ ¬q |
+|---|---|----|----|---------|
+| T | T |  F |  F |    F    |
+| T | F |  F |  T |    F    |
+| F | T |  T |  F |    F    |
+| F | F |  T |  T |    T    |
+
+Step 4: Include p $\wedge$ q as a column to the existing table
+
+| p | q | ¬p | ¬q | ¬p ∧ ¬q | p ∧ q | (¬p ∧ ¬q) ⇒ (p ∧ q) |
+|---|---|----|----|---------|-------|----------------------|
+| T | T |  F |  F |    F    |   T   |           T          |
+| T | F |  F |  T |    F    |   F   |           T          |
+| F | T |  T |  F |    F    |   F   |           T          |
+| F | F |  T |  T |    T    |   F   |           F          |
+
+### Example 2
+Consider ¬q ∨ p ⇔ ¬r ∨ q ∧ p
+
 
 
 </details>
