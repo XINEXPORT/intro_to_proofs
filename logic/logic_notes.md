@@ -428,7 +428,10 @@ The following English sentences translate to $\neg{p}$
 <details>
 <summary><strong>Implication</strong></summary>
 Definition: implication is the logical operator that corresponds to the structure if/then. It combines 2 logical statements and its value is false only when the assumption is true and the conclusion is fare.
+
 <br>
+<br>
+
 Definition: in the statement "if p then q", the statement p is the assumption or the assertion. the statement q is the conclusion.
 
 Written as $\Rightarrow$
@@ -447,7 +450,9 @@ what would be required to make this statement false?
 > Let s b "the positive integer n is odd"
 >
 > if a positive integer n is prime, then n is odd
+
 <br>
+
 What would be required to disprove this proposition?
 - if 7 is prime, then 7 is odd true
 - if 3 is prime, then 3 is odd true
@@ -460,7 +465,9 @@ Truth table for implication:
 | T | F |   F   |
 | F | T |   T   |
 | F | F |   T   |
+
 <br>
+
 > Let p be "A quadrilateral is a square"
 >
 > Let q be "A quadrilateral is a rectangle"
