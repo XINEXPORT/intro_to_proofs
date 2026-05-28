@@ -541,11 +541,12 @@ The following sentences translate to p $\Leftrightarrow$ q
 
 ### Order of Logical Operations
 1. Parenthesis ()
-2. Negation $\neg$
-3. Conjunction $\wedge$
-4. Disjunction $\vee$
-5. Implication $\Rightarrow$
-6. Biconditional $\Leftrightarrow$
+2. Brackets []
+3. Negation $\neg$
+4. Conjunction $\wedge$
+5. Disjunction $\vee$
+6. Implication $\Rightarrow$
+7. Biconditional $\Leftrightarrow$
 
 ### In what order do we perform logical operators?
 
@@ -693,6 +694,93 @@ Step 5: Setup the (¬r) ∨ (q ∧ p)
 |    T     |        T        | T — same     |
 
 ### Example 3
+Create the complete truth table with all intermediate columns for the logical formula:
 
+> ¬[(¬p) ⇒ q] ⇒ (q ∧ r)
+
+Logical Order of Operations:
+1. (¬p)
+2. ¬[(¬p) ⇒ q]
+3. (q ∧ r)
+4. ¬[(¬p) ⇒ q]
+5 ¬[(¬p) ⇒ q] ⇒ (q ∧ r)
+
+Step 0: setup p, q, r
+
+| p | q | r |
+|---|---|---|
+| T | T | T |
+| T | T | F |
+| T | F | T |
+| T | F | F |
+| F | T | T |
+| F | T | F |
+| F | F | T |
+| F | F | F |
+
+Step 1: add (¬p)
+
+| p | q | r | (¬p) |
+|---|---|---|------|
+| T | T | T |   F  |
+| T | T | F |   F  |
+| T | F | T |   F  |
+| T | F | F |   F  |
+| F | T | T |   T  |
+| F | T | F |   T  |
+| F | F | T |   T  |
+| F | F | F |   T  |
+
+Step 2: add [(¬p) ⇒ q]
+
+| p | q | r | ¬p | (¬p) ⇒ q |
+|---|---|---|----|----------|
+| T | T | T |  F |    T     |
+| T | T | F |  F |    T     |
+| T | F | T |  F |    T     |
+| T | F | F |  F |    T     |
+| F | T | T |  T |    T     |
+| F | T | F |  T |    T     |
+| F | F | T |  T |    F     |
+| F | F | F |  T |    F     |
+
+Step 3: add (q ∧ r)
+
+| p | q | r | ¬p | (¬p) ⇒ q | q ∧ r |
+|---|---|---|----|----------|-------|
+| T | T | T |  F |    T     |   T   |
+| T | T | F |  F |    T     |   F   |
+| T | F | T |  F |    T     |   F   |
+| T | F | F |  F |    T     |   F   |
+| F | T | T |  T |    T     |   T   |
+| F | T | F |  T |    T     |   F   |
+| F | F | T |  T |    F     |   F   |
+| F | F | F |  T |    F     |   F   |
+
+Step 4: add ¬[(¬p) ⇒ q]
+
+| p | q | r | ¬p | (¬p) ⇒ q | q ∧ r | ¬[(¬p) ⇒ q] |
+|---|---|---|----|----------|-------|---------------|
+| T | T | T |  F |    T     |   T   |		F		|
+| T | T | F |  F |    T     |   F   |		F		|
+| T | F | T |  F |    T     |   F   |		F		|
+| T | F | F |  F |    T     |   F   |		F		|
+| F | T | T |  T |    T     |   T   |		F		|
+| F | T | F |  T |    T     |   F   |		F		|
+| F | F | T |  T |    F     |   F   |		T		|
+| F | F | F |  T |    F     |   F   |		T		|
+
+Step 5: add ¬[(¬p) ⇒ q] ⇒ (q ∧ r)
+
+| p | q | r | ¬p | (¬p) ⇒ q | q ∧ r | ¬[(¬p) ⇒ q] | ¬[(¬p) ⇒ q] ⇒ (q ∧ r) |
+|---|---|---|----|----------|-------|---------------|------------------------|
+| T | T | T |  F |    T     |   T   |		F		|			T			 |
+| T | T | F |  F |    T     |   F   |		F		|			T            |
+| T | F | T |  F |    T     |   F   |		F		|			T            |
+| T | F | F |  F |    T     |   F   |		F		|			T            |
+| F | T | T |  T |    T     |   T   |		F		|			T            |
+| F | T | F |  T |    T     |   F   |		F		|			T            |
+| F | F | T |  T |    F     |   F   |		T		|			F            |
+| F | F | F |  T |    F     |   F   |		T		|			F            |
 
 </details>
