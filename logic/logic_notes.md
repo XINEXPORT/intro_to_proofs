@@ -861,7 +861,11 @@ Prove that p $\wedge$ $\neg$ p is a self-contradiction.
 | F |  T |   F    |
 
 ### Modus Ponens
-Show that [(p ⇒ q) ∧ p] ⇒ q is a tautology. This is called modus ponens.
+Show that [(p ⇒ q) ∧ p] ⇒ q is a tautology.
+
+If you know p implies q and you know p, then you know q.
+
+This is called modus ponens.
 
 | p | q | p ⇒ q | (p ⇒ q) ∧ p | [(p ⇒ q) ∧ p] ⇒ q |
 |---|---|-------|-------------|-------------------|
