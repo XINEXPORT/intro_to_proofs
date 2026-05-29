@@ -14,6 +14,7 @@
 - [Implication](#implication)
 - [Biconditional](#biconditional)
 - [Multi Step Truth Tables](#multi-step-truth-tables)
+- [Logical Equivalence](#logical-equivalence)
 
 ---
 
@@ -782,5 +783,97 @@ Step 5: add ¬[(¬p) ⇒ q] ⇒ (q ∧ r)
 | F | T | F |  T |    T     |   F   |		F		|			T            |
 | F | F | T |  T |    F     |   F   |		T		|			F            |
 | F | F | F |  T |    F     |   F   |		T		|			F            |
+
+</details>
+
+<details>
+<summary><strong>Logical Equivalence</strong></summary>
+
+Definition: a logical equivalence are two logical formula of the same inputs are
+to be logically equivalent if for any truth values of the inputs, the output truth values of
+the two formula are always the same.
+
+<br>
+
+Two logical formula are logically equivalent if they give the same final
+result on a truth table.
+
+> show that p ⇔ q is logically equivalent to (p ⇒ q) ∧ (q ⇒ p)
+
+| p | q | p ⇔ q | p ⇒ q | q ⇒ p | (p ⇒ q) ∧ (q ⇒ p) |
+|---|---|-------|-------|-------|-------------------|
+| T | T |   T   |   T   |   T   |         T         |
+| T | F |   F   |   F   |   T   |         F         |
+| F | T |   F   |   T   |   F   |         F         |
+| F | F |   T   |   T   |   T   |         T         |
+
+> show that p ⇒ q is logically equivalent to ¬p ∨ q
+
+| p | q | p ⇒ q | ¬p | ¬p ∨ q |
+|---|---|-------|----|--------|
+| T | T |   T   |  F |   T    |
+| T | F |   F   |  F |   F    |
+| F | T |   T   |  T |   T    |
+| F | F |   T   |  T |   T    |
+
+Consider the following:
+> (p ∨ q ) ∨ r
+>
+> p ∨ (q ∨ r)
+
+Are these equivalent? yes
+Is disjunction an associative operation? yes
+
+| p | q | r | p ∨ q | (p ∨ q) ∨ r | q ∨ r | p ∨ (q ∨ r) |
+|---|---|---|-------|-------------|-------|-------------|
+| T | T | T |   T   |      T      |   T   |      T      |
+| T | T | F |   T   |      T      |   T   |      T      |
+| T | F | T |   T   |      T      |   T   |      T      |
+| T | F | F |   T   |      T      |   F   |      T      |
+| F | T | T |   T   |      T      |   T   |      T      |
+| F | T | F |   T   |      T      |   T   |      T      |
+| F | F | T |   F   |      T      |   T   |      T      |
+| F | F | F |   F   |      F      |   F   |      F      |
+
+Definition: **tautology** is a logical formula whose result is always true.
+The final column of the truth table is all T or True.
+
+<br>
+
+Definition: a **self-contradiction** is a logical formula whose result
+is always false. The final column of the truth table is all F or False.
+
+### The Law of the Excluded Middle
+
+Prove that p $\vee$ $\neg$ p is a tautology. This is called the law of
+the excluded middle.
+
+| p | ¬p | p ∨ ¬p |
+|---|----|--------|
+| T |  F |   T    |
+| F |  T |   T    |
+
+Prove that p $\wedge$ $\neg$ p is a self-contradiction.
+
+| p | ¬p | p ∧ ¬p |
+|---|----|--------|
+| T |  F |   F    |
+| F |  T |   F    |
+
+### Modus Ponens
+Show that [(p ⇒ q) ∧ p] ⇒ q is a tautology. This is called modus ponens.
+
+| p | q | p ⇒ q | (p ⇒ q) ∧ p | [(p ⇒ q) ∧ p] ⇒ q |
+|---|---|-------|-------------|-------------------|
+| T | T |   T   |      T      |         T         |
+| T | F |   F   |      F      |         T         |
+| F | T |   T   |      F      |         T         |
+| F | F |   T   |      F      |         T         |
+
+
+
+
+
+
 
 </details>
