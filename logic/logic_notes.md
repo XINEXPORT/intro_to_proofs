@@ -15,6 +15,7 @@
 - [Biconditional](#biconditional)
 - [Multi Step Truth Tables](#multi-step-truth-tables)
 - [Logical Equivalence](#logical-equivalence)
+- [De Morgan's Laws](#de-morgans-laws)
 
 ---
 
@@ -430,7 +431,7 @@ The following English sentences translate to $\neg{p}$
 
 <details>
 <summary><strong>Implication</strong></summary>
-Definition: implication is the logical operator that corresponds to the structure if/then. It combines 2 logical statements and its value is false only when the assumption is true and the conclusion is fare.
+Definition: implication is the logical operator that corresponds to the structure if/then. It combines 2 logical statements and its value is false only when the assumption is true and the conclusion is false.
 
 <br>
 <br>
@@ -874,10 +875,75 @@ This is called modus ponens.
 | F | T |   T   |      F      |         T         |
 | F | F |   T   |      F      |         T         |
 
+</details>
 
+<details>
+<summary><strong>De Morgan's Laws</strong></summary>
 
+### Negation of an AND statement
 
+Consider the statement, "I am wearing a shirt and I am wearing pants."
 
+What would disprove this statement?
+- You are not wearing a shirt.
+- You are not wearing pants.
+- You are not wearing a shirt or wearing pants.
 
+### Negation of an OR statement
+
+Consider the statement, "Tonight I will go bowling or I will go to the movies"
+
+What would disprove this statement?
+- I am not going to the movies
+- I am not going bowling
+
+### De Morgan's Laws
+$\neg$ (p $\wedge$ q) is logically equivalent to $\neg$ p $\vee$ $\neg$ q
+$\neg$ (p $\vee$ q) is logical equivalent to $\neg$ p $\wedge$ $\neg$ q
+
+| p | q | p ∧ q | ¬(p ∧ q) | ¬p | ¬q | (¬p) ∨ (¬q) |
+|---|---|-------|----------|----|----|-------------|
+| T | T |   T   |    F     |  F |  F |      F      |
+| T | F |   F   |    T     |  F |  T |      T      |
+| F | T |   F   |    T     |  T |  F |      T      |
+| F | F |   F   |    T     |  T |  T |      T      |
+
+| p | q | p ∨ q | ¬(p ∨ q) | ¬p | ¬q | (¬p) ∧ (¬q) |
+|---|---|-------|----------|----|----|-------------|
+| T | T |   T   |    F     |  F |  F |      F      |
+| T | F |   T   |    F     |  F |  T |      F      |
+| F | T |   T   |    F     |  T |  F |      F      |
+| F | F |   F   |    T     |  T |  T |      T      |
+
+### Negating Implications
+- Recall: p $\Rightarrow$ q is logically equivalent to $\neg$ p $\vee$ q
+    - This $\neg$ (p $\Rightarrow$ q) must be logically equivalent to $\neg$
+    $\neg$($\neg$ p $\vee$ q)
+- De Morgan's Law
+    - $\neg$($\neg$ p $\vee$ q) is logically equivalent to $\neg$($\neg$ p $\wedge$ $\neg$ q)
+- $\neg$($\neg$ p) is the same as p
+
+| p | ¬p | ¬(¬p) |
+|---|----|-------|
+| T |  F |   T   |
+| F |  T |   F   |
+
+- $\neg$ (p $\Rightarrow$ q) is the same as p $\wedge$ $\neg$ q which can be
+proven in a truth table
+
+| p | q | p ⇒ q | ¬q | ¬(p ⇒ q) | p ∧ ¬q |
+|---|---|-------|----|----------|--------|
+| T | T |   T   |  F |    F     |   F    |
+| F | F |   T   |  T |    F     |   F    |
+| T | F |   F   |  T |    T     |   T    |
+| F | T |   T   |  F |    F     |   F    |
+
+### Negating English
+- I am wearing a shirt and I am wearing pants.
+    - I am not wearing a shirt or I am not wearing pants.
+- Tonight I will go bowling or go to the movies.
+    - Tonight I will not go bowling and I will not go to the movies.
+- If it is winter then the temperature is below freezing.
+    - It is winter but the temperature is not below freezing.
 
 </details>
