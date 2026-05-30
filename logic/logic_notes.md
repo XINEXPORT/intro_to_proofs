@@ -1300,6 +1300,7 @@ Consider the two statements:
 > There exists an integer of x such that for all integers of y, y is greater than x
 
 Do these mean the same thing? No
+<br>
 why?
 - First statement means for all x integers, there exists a y integer greater than x
 - Second statement means for a given x integer, all y integers are greater than x
@@ -1317,6 +1318,7 @@ $\forall x \in \mathbb{Z} \ni \forall y \in \mathbb{Z}, y \neq x$
 > For any integer x such that any integer y, y is not equal to x
 
 Do these mean the same thing? No
+<br>
 why?
 - First statement means for all x and y integers, y is not equal to x
 - Second statement means for all x integers, there are y integers different than x
