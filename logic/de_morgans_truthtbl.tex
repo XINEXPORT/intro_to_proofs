@@ -1,14 +1,52 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{centernot}
 
 \title{De Morgan's for Three in a Truth Table}
 \author{Christine Hoang}
-\date{May 2026}
+\date{May 30 2026}
 
 \begin{document}
 
 \maketitle
 
 \section{De Morgan's for Three in a Truth Table}
+
+ Use a truth table to show that the following are logically equivalent:
+\[
+\neg(p \vee q \vee r) \equiv \neg p \wedge \neg q \wedge \neg r
+\]
+
+To prove this, we construct a truth table for both sides and verify that they produce identical truth values for all combinations of $p$, $q$, and $r$.
+
+\vspace{1em}
+
+\begin{center}
+\begin{tabular}{ccc|c|c|ccc|c}
+\toprule
+$p$ & $q$ & $r$ & $p \vee q \vee r$ & $\neg(p \vee q \vee r)$ & $\neg p$ & $\neg q$ & $\neg r$ & $\neg p \wedge \neg q \wedge \neg r$ \\
+\midrule
+T & T & T & T & F & F & F & F & F \\
+T & T & F & T & F & F & F & T & F \\
+T & F & T & T & F & F & T & F & F \\
+T & F & F & T & F & F & T & T & F \\
+F & T & T & T & F & T & F & F & F \\
+F & T & F & T & F & T & F & T & F \\
+F & F & T & T & F & T & T & F & F \\
+F & F & F & F & T & T & T & T & T \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\vspace{1em}
+
+Since the columns for $\neg(p \vee q \vee r)$ and $\neg p \wedge \neg q \wedge \neg r$ are identical for all eight rows, we conclude:
+\[
+\neg(p \vee q \vee r) \equiv \neg p \wedge \neg q \wedge \neg r \qquad \square
+\]
 
 \end{document}
