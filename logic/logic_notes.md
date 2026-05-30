@@ -16,6 +16,7 @@
 - [Multi Step Truth Tables](#multi-step-truth-tables)
 - [Logical Equivalence](#logical-equivalence)
 - [De Morgan's Laws](#de-morgans-laws)
+- [Inverses, Converses, Contrapositives](#inverses_converses_contrapositives)
 
 ---
 
@@ -945,5 +946,134 @@ proven in a truth table
     - Tonight I will not go bowling and I will not go to the movies.
 - If it is winter then the temperature is below freezing.
     - It is winter but the temperature is not below freezing.
+
+</details>
+
+<details>
+<summary><strong>Inverses, Converses, Contrapositives</strong></summary>
+
+### From an Original Implication to Other Implications
+Example A:
+Consider the statement, "if a quadrilateral has opposite sides of equal length
+then it is a parallelogram
+
+- p = the quadrilateral has opposite sides of equal length
+- q = the quadrilateral is a parallelogram
+- this means p $\Rightarrow$ q
+
+Example B:
+Consider the statement: "if a quadrilateral is a square then it is a parallelogram
+
+- r = the quadrilateral is a square
+- q = the quadrilateral is a parallelogram
+- this mean r $\Rightarrow$ q
+
+Are these implication true? yes
+
+### Inverse
+Definition: the **Inverse** of the implication of p $\Rightarrow$ q is
+$\neg$ p $\Rightarrow$ $\neg$ q
+
+Implication A: if a quadrilateral has opposite sides of equal length, then it is a
+parallelogram
+<br>
+Inverse A: if a quadrilateral has opposite sides of unequal length, then it is not a
+parallelogram
+
+Is the inverse valid? yes
+
+Implication B: if a quadrilateral is a square then it is a parallelogram
+<br>
+Inverse B: if a quadrilateral is not a square then it is not parallelogram
+
+Is the inverse valid? no
+
+### Comparing the Inverse and the Original
+
+| p | q | p ⇒ q | ¬p | ¬q | (¬p) ⇒ (¬q) |
+|---|---|-------|----|----|-----------  |
+| T | T |   T   |  F |  F |      T      |
+| T | F |   F   |  F |  T |      T      |
+| F | T |   T   |  T |  F |      F      |
+| F | F |   T   |  T |  T |      T      |
+
+An implication and its inverse are **NOT logically** equivalent
+    - It is possible for an implication to be valid but not its inverse
+    - It is posssible for an inverse to be valid but its implication is not
+
+## Converse
+Definition: The **Converse** of the implication p $\Rightarrow$ q is the
+implication of q $\Rightarrow$ p
+
+Implication A: If a quadrilateral has opposite sides of equal length, then it is
+a parallelogram
+<br>
+Converse A: If a quadrilateral is a parallelogram, then its opposite sides has
+equal lengths
+
+- The conclusion and the assumption is reversed
+
+Implication B:  if a quadrilateral is a square then it is a parallelogram
+<br>
+Converse B: if a quadrilateral is a parallelogram, then it is a square
+
+Is the converse valid? No
+
+### Comparing the Converse and the Original
+
+| p | q | p ⇒ q | q ⇒ p |
+|---|---|-------|-------|
+| T | T |   T   |   T   |
+| T | F |   F   |   T   |
+| F | T |   T   |   F   |
+| F | F |   T   |   T   |
+
+- An implication statement and its converse are **NOT logically** equivalent
+    - Its possible for an implication to be valid and its converse isnt
+    - Its possible for a converse to be valid and its implication isnt
+
+### Contrapositive
+Definition: the **contrapositive** of the implication p $\Rightarrow$ q
+is the implication $\neg$ q $\Rightarrow$ $\neg$ p
+
+Implication A: If a quadrilateral has opposite sides of equal length, then it is
+a parallelogram
+<br>
+Contrapositive A: If a quadrilateral is not a parallelogram then it has
+opposite sides of unequal length?
+
+Is the contrapositive valid? yes
+
+Implication B: if a quadrilateral is a square then it is a parallelogram
+<br>
+Contrapositive B: if a quadrilateral is not a parallelogram then it is not
+a square
+
+Is the contrapositive valid? yes
+
+### Comparing the Contrapositive and the Original
+
+| p | q | p ⇒ q | ¬p | ¬q | (¬q) ⇒ (¬p) |
+|---|---|-------|----|----| ------------|
+| T | T |   T   |  F |  F |      T      |
+| T | F |   F   |  F |  T |      F      |
+| F | T |   T   |  T |  F |      T      |
+| F | F |   T   |  T |  T |      T      |
+
+- An implication statement and its contraposituve **are logically equivalent**
+    - If an implication is valid, so is its contrapositive
+    - If an contrapositive is valid, so is its implication
+
+### Example in English
+Implication: If its snowing then I wear boots
+- Inverse: If its not snowing then I dont wear boots
+- Converse: If I wear boots then its snowing
+- Contrapositive: If i dont wear boot then its not snowing
+
+## Example in Math
+Implication: For n $\in$ $\\mathbb{Z}^{+}$, if n is prime then n + 1 is composite
+- Inverse: If n is not prime then n + 1 is not composite
+- Converse: If n + a is composite then n is prime
+- Contrapositive: If n + 1 is not composite then n is not prime
 
 </details>
