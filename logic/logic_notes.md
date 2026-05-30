@@ -1233,7 +1233,7 @@ Considering the following:
 - For all integers of x, x powered to the 2 is greater than or equal to x
 - true or false? true
 
-$\forall 3 \in \mathbb{Z}, 3^2 \geq 3
+$\forall 3 \in \mathbb{Z}, 3^2 \geq 3$
 
 Considering the following:
 > $\forall x, y \in \mathbb{R}, \frac{x+y}{2} \geq \sqrt{xy}$
@@ -1241,7 +1241,9 @@ Considering the following:
 of xy
 - true or false? false
 
-$\forall 2, 3 \in \mathbb{R}, \frac{2+3}{2} \geq 2.45
+$\forall 2, 3 \in \mathbb{R}, \frac{2+3}{2} \geq 2.45$
+<br>
+
 $\forall 10, 20 \in \mathbb{R}, \frac{10+20}{2} \geq 14.14$
 
 Considering the following:
@@ -1251,6 +1253,8 @@ greater than y to the power of 2
 - true or false? false
 
 $\forall 2, 1 \in \mathbb{R}, (2 > 1) \Rightarrow (4 > 1)$
+<br>
+
 $\forall 1, 2 \in \mathbb{R}, (1 > 2) \Rightarrow (1 > 4)$
 
 - To prove a universal statement, you need all possibilities checked
