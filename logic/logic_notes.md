@@ -18,6 +18,7 @@
 - [De Morgan's Laws](#de-morgans-laws)
 - [Inverses, Converses, Contrapositives](#inverses_converses_contrapositives)
 - [Predicates](#predicates)
+- [Quantifiers](#quantifiers)
 
 ---
 
@@ -1152,5 +1153,135 @@ For x, y $\in$ $\mathbb{Z}$, if x is odd and y is odd, then x + y is odd
 
 **Math Form**
 For x, y $\in$ $\mathbb{Z}$, [(2 $\nmid$ x) $\wedge$ (2 $\nmid$ y)] $\Rightarrow$ [2|(x + y)]
+
+</details>
+
+<details>
+<summary><strong>Quantifiers</strong></summary>
+
+### Unsolved Problems in Math
+- There exists an odd perfect number
+- For any even number n such that n $\geq$ 4, n can be written as the sum of two prime numbers
+- All roots of the zeta function are either negative even integers or complex numbers with real part $\frac{1}{2}$
+
+Definition: An **existential statement** is a proposition that aims to prove there is at least one element with certain properties.
+
+- there exists an odd perfect number
+- there is a real number, z, such that when its added to any other real number, x, the sum is x.
+
+To prove either, we only need to find one example that works.
+
+### Notation for "There exists"
+Written as $\exists$
+
+**Notation for "Such That"
+Written as $\ni$
+
+The Math notation for the proposition "there exists an odd perfect number"
+> $\exists n \in \mathbb{N} \ni (2 \nmid n) \land \left(\sum_{i=1}^{k} a_i = n\right)$
+Where {$\a_1$, $\a_2$, ..., $\a_k$} is the set of proper factors of n
+
+### Translate the Math notations
+Considering the following:
+> $\exists x \in \mathbb{R} \ni x^3 = x$
+ - x exists such that x is a real number such that x has a power to the 3 which is x
+ - let x be a real number that is powered to the 3
+ - true or false? true
+
+$\exists 2 \in \mathbb{R} \ni 2^3 = 8$
+
+Considering the following:
+>  $\exists x, y \in \mathbb{Z} \ni x + y > xy$
+- x exists, y such that the integer such that x + 7 is greater than the sum of xy
+- let x, y be an integer such that x+y is greater than the integer values of xy
+- true or false? false
+
+$\exists 2, 3 \in \mathbb{Z} \ni 2 + 3 > 6$
+
+Considering the following:
+> $\exists x, y, z \in \mathbb{Z} \ni [2|(x + y)] \land [2|(x + z)] \land [2 \nmid (y + z)]$
+- x, y, z integer exists such that the sum of x + y is divisible by 2 and x + z is divisible by 2 and y + z is not divisible by 2
+- the sum of x + y will be even, the sum of x + z will be even, and the sum of y + z will be odd
+- let x, y, z be an integer where the sum if x+y is even, x+z is even, and y+z is odd
+- true or false? false
+
+$\exists 1, 2, 3 \in \mathbb{Z} \ni [2|(1 + 2)] \land [2|(1 + 3)] \land [2 \nmid (2 + 3)]$
+
+- To prove existential statements, you only need one example
+- To disprove existential statements, you need to prove that nothing works which requires
+all possibilities, mostly needing another proof
+
+### Universal Statements
+Definition: a **universal statement** is proposition that aims to prove that any elements with certain properties have a particular property.
+
+Written as $\forall$ for any or for all
+
+<br>
+
+**Goldbach's Conjecture**
+For any even number greater than or equal to four, the number can be expressed as the sum of two prime numbers
+
+> $\forall n \in \mathbb{Z}^{+} \ni (2|n) \land (n \geq 4), \exists p, q \in \mathbb{Z}^{+} \ni p$ and $q$ are prime numbers and $p + q = n$.
+
+<br>
+
+For any sets A and B, A is a subset of A $\cup$ B
+
+### Translate the Math notations
+Considering the following:
+> $\forall x \in \mathbb{Z}, x^2 \geq x$
+- For all integers of x, x powered to the 2 is greater than or equal to x
+- true or false? true
+
+$\forall 3 \in \mathbb{Z}, 3^2 \geq 3
+
+Considering the following:
+> $\forall x, y \in \mathbb{R}, \frac{x+y}{2} \geq \sqrt{xy}$
+- For all real numbers of x, y, x + y / 2 is greater than or equal to the square root
+of xy
+- true or false? false
+
+$\forall 2, 3 \in \mathbb{R}, \frac{2+3}{2} \geq 2.45
+$\forall 10, 20 \in \mathbb{R}, \frac{10+20}{2} \geq 14.14$
+
+Considering the following:
+> $\forall x, y \in \mathbb{R}, (x > y) \Rightarrow (x^2 > y^2)$
+- For all real numbers of x,y, if x is greater than y then x to the power of 2 is
+greater than y to the power of 2
+- true or false? false
+
+$\forall 2, 1 \in \mathbb{R}, (2 > 1) \Rightarrow (4 > 1)$
+$\forall 1, 2 \in \mathbb{R}, (1 > 2) \Rightarrow (1 > 4)$
+
+- To prove a universal statement, you need all possibilities checked
+- To disprove universal statements, you only need one counter example.
+
+### English Translation of Quantifiers
+Notation of $\exists$ translates to:
+- There exists
+- There is a(n)
+- For some
+
+English phrases that translate to $\forall$
+- For all
+- For any
+- For an arbitrary
+- Every
+- All
+- Any
+
+### The word "Let"
+- sometimes for all or for any translates to the word let
+    - Let x be a real number
+    - Let 1 > 0
+- sometimes let is assigning something and means neither
+    - Let y = $\sqrt{2}$
+    - Let x = b - a
+
+
+
+
+
+
 
 </details>
