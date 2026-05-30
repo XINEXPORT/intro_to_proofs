@@ -19,6 +19,7 @@
 - [Inverses, Converses, Contrapositives](#inverses_converses_contrapositives)
 - [Predicates](#predicates)
 - [Quantifiers](#quantifiers)
+- [Maximal Negation](#maximal-negation)
 
 ---
 
@@ -1282,10 +1283,124 @@ English phrases that translate to $\forall$
     - Let y = $\sqrt{2}$
     - Let x = b - a
 
+</details>
 
+<details>
+<summary><strong>Maximal Negation</strong></summary>
 
+### Both Quantifiers Together
+Consider the two statements:
 
+>$\forall x \in \mathbb{Z}, \exists y \in \mathbb{Z}, y > x$
+>
+>$\exists x \in \mathbb{Z}, \forall y \in \mathbb{Z}, y > x$
 
+> For all integers of x, there exists an integer of y is > greater than x
+>
+> There exists an integer of x such that for all integers of y, y is greater than x
 
+Do these mean the same thing? No
+why?
+- First statement means for all x integers, there exists a y integer greater than x
+- Second statement means for a given x integer, all y integers are greater than x
+    - Stating there is an integer that is always smaller than y
+
+### A Condition rather than a Quantifier
+Consider these two statements:
+
+$\forall x \in \mathbb{Z}, \forall y \in \mathbb{Z}, y \neq x$
+
+$\forall x \in \mathbb{Z} \ni \forall y \in \mathbb{Z}, y \neq x$
+
+> For any integer x and y, y is not equal to x
+>
+> For any integer x such that any integer y, y is not equal to x
+
+Do these mean the same thing? No
+why?
+- First statement means for all x and y integers, y is not equal to x
+- Second statement means for all x integers, there are y integers different than x
+    - Missing a verb from a statement, its only stating a condition
+
+### Pythagorean Theorem
+In any triangle ABC, if $\angle A$ is a right angle, then $AB^2 + AC^2 = BC^2$.
+
+> $\forall \triangle ABC, \left[m\angle A = \frac{\pi}{2}\right] \Rightarrow (AB^2 + AC^2 = BC^2)$
+
+- For any triangle ABC, if the measure of angle A is equal to $\frac{\pi}{2}$, then AB^2 + AC^2 = BC^2
+
+### Pythagorean Theorem w/ Inverses, Converses, Contrapositives, and Quantifiers
+- The inverse, converse, and contrapositive do not affect the quantifier.
+    - If there is ∀ it remains ∀
+    - If there is ∃ it remains ∃
+
+**Pythagorian Theorem for Inverse, Converse, and Contrapositive**
+Pythagorian Theorem:
+> $\forall \triangle ABC, \left[m\angle A = \frac{\pi}{2}\right] \Rightarrow (AB^2 + AC^2 = BC^2)$
+
+**Inverse:**
+> $\forall \triangle ABC, \neg \left[m\angle A = \frac{\pi}{2}\right] \Rightarrow \neg (AB^2 + AC^2 = BC^2)$
+
+**Better Inverse:**
+> $\forall \triangle ABC, \left[m\angle A \neq \frac{\pi}{2}\right] \Rightarrow (AB^2 + AC^2 \neq BC^2)$
+
+**Converse**
+> $\forall \triangle ABC, (AB^2 + AC^2 = BC^2 \Rightarrow \left[m\angle A = \frac{\pi}{2}\right] )$
+
+**Contrapositive**
+> $\forall \triangle ABC, (AB^2 + AC^2 \neq BC^2 \Rightarrow \left[m\angle A\neq \frac{\pi}{2}\right] )$
+
+### Negations Affect Quantifiers
+- To disprove a universal statement, you only need one counter example
+    - The negation of a universal statement is an **existential statement**
+- To disprove an existential statement, all possibilities must make the statement false
+    - The negation of an existential statement is a **universal statement**
+
+### Maximal Negation
+Definition: We say a statement is maximally negated if all negations are on predicates only,
+even better if they are within the predicates
+ - passing negations within predicates rather than wrapping the negation around the statement
+
+**Pythagorian Theorem for Maximal Negation**
+Pythagorian Theorem:
+> $\forall \triangle ABC, \left[m\angle A = \frac{\pi}{2}\right] \Rightarrow (AB^2 + AC^2 = BC^2)$
+
+**Negation:**
+> $\neg\left[\forall \triangle ABC, \left[m\angle A = \frac{\pi}{2}\right] \Rightarrow (AB^2 + AC^2 = BC^2)\right]$
+
+**Move past the quantifier:**
+> $\exists \triangle ABC, \neg(\left[m\angle A = \frac{\pi}{2}\right] \Rightarrow (AB^2 + AC^2 = BC^2))$
+
+**Negating the implication (if/then) statement**
+ - Refer back to De Morgan's Laws
+    - p $\Rightarrow$ q is the same as $\neg$ p $\vee$ q
+        - the negation of this is p $\wedge$ $\neg$ q
+> $\exists \triangle ABC, \left[m\angle A = \frac{\pi}{2}\right] \wedge \neg (AB^2 + AC^2 = BC^2)$
+
+Better Negation of the Predicate:
+> $\exists \triangle ABC, \left[m\angle A = \frac{\pi}{2}\right] \wedge (AB^2 + AC^2 \neq BC^2)$
+
+### Negating a Statement
+There is an additive identity in the real numbers
+
+>$\exists z \in \mathbb{R}, \forall x \in \mathbb{R}, [(z + x) = x] \wedge [(x + z) = x]$
+
+Negation:
+>$\neg$ $\exists z \in \mathbb{R}, \forall x \in \mathbb{R}, [(z + x) = x] \wedge [(x + z) = x]$
+
+Move past the quantifier:
+>$\forall z \in \mathbb{R}, \neg \forall x \in \mathbb{R}, [(z + x) = x] \wedge [(x + z) = x]$
+
+> $\forall z \in \mathbb{R}, \exists x \in \mathbb{R}, \neg [(z + x) = x] \wedge [(x + z) = x]$
+
+Negating an AND Statement:
+> $\forall z \in \mathbb{R}, \exists x \in \mathbb{R}, \neg [(z + x) = x] \vee [(x + z) = x]$
+
+Maximal Negation of the Predicate:
+> $\forall z \in \mathbb{R}, \exists x \in \mathbb{R}, \neg [(z + x) = x] \vee \neg [(x + z) = x]$
+
+Better Meximal Negation of the Predicate:
+> $\forall z \in \mathbb{R}, \exists x \in \mathbb{R}, [(z + x) \neq x] \vee \neg [(x + z) \neq x]$
 
 </details>
+
