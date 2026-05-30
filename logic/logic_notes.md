@@ -9,7 +9,7 @@
 - [Logical Statements](#logical-statements)
 - [Logical Formula and Truth Tables](#logical-formula-and-truth-tables)
 - [Conjuction](#conjunction)
-- [Disjuction](#disjunction)
+- [Disjunction](#disjunction)
 - [Negation](#negation)
 - [Implication](#implication)
 - [Biconditional](#biconditional)
@@ -17,6 +17,7 @@
 - [Logical Equivalence](#logical-equivalence)
 - [De Morgan's Laws](#de-morgans-laws)
 - [Inverses, Converses, Contrapositives](#inverses_converses_contrapositives)
+- [Predicates](#predicates)
 
 ---
 
@@ -1075,5 +1076,81 @@ Implication: For n $\in$ $\\mathbb{Z}^{+}$, if n is prime then n + 1 is composit
 - Inverse: If n is not prime then n + 1 is not composite
 - Converse: If n + a is composite then n is prime
 - Contrapositive: If n + 1 is not composite then n is not prime
+
+</details>
+
+<details>
+<summary><strong>Predicates</strong></summary>
+Definition: a logical statement that uses variables.
+
+A **predicate**  is a statement which depends on one or more variables but
+if we knew the values of each of those variables, it would have a truth value
+which could be determined.
+
+Consider these two statements:
+
+> "17 is a prime number."
+>
+>"$n$ is a prime number."
+
+- Does the second statement make sense? No
+- Do both statements have a truth value? yes
+
+**Notation**: We often use p for a logical statement
+<br>
+We could write p(x) for a predicate that depends on variable x.
+
+If a predicate depends on several variables we could write p(x,y,z)
+
+### Defining variables
+
+**Super Important**: When stating a predicate, its essential that you define
+which set the variables can come from.
+
+> For x $\in$ $\\mathbb{Z}^{+}$, p(x): x is prime.
+This is a well defined predicate because x is a positive integer
+
+> For x $\in$ $\mathbb{R}$, p(x): x is prime
+This is not a well defined predicate because x is a real number and primes are
+not used for real numbers.
+
+**Well Defined and Not Well Defined examples**
+- for x, y $\in$ $\mathbb{Z}^{+}$, q(x,y): x $\geq$ y --> well-defined
+- for x, y $\in$ $\mathbb{Q}$, q(x,y): x $\geq$ y --> well-defined
+- for x, y $\in$ $\mathbb{R}$, q(x,y): x $\geq$ y --> well-defined
+- for x, y $\in$ $\mathbb{C}$, q(x,y): x $\geq$ y --> NOT well-defined
+
+> For x $\in$ $\mathbb{Z}$ let p(x) be x is even
+>
+> For y $\in$ $\mathbb{R}$ let q(y) be y is positive.
+
+Find the truth values for each:
+- p(-100), true
+- p(7), false
+- p($\pi$), not-well defined
+- p(-100), false
+- q(7), true
+- p($\pi$), true
+
+### Different froms of writing  proposition
+Consider the proposition: If you add 2 odd numbers, the sum is even
+
+**Open Sentence Form**
+For x $\in$ $\mathbb{Z}$, let p(x) be x is odd
+<br>
+Converted to symbolic notation:
+
+[p(x) $\wedge$ p(y)] $\Rightarrow$ $\neg$ p(x + y)
+
+- this means p(x) and p(y) are odd numbers which implies
+that the negation of x + y is an even integer
+- this is an example of a proposition that is difficult to intepret
+- open sentence form should be avoided because it is difficult to read
+
+**Math and Words Form**
+For x, y $\in$ $\mathbb{Z}$, if x is odd and y is odd, then x + y is odd
+
+**Math Form**
+For x, y $\in$ $\mathbb{Z}$, [(2 $\nmid$ x) $\wedge$ (2 $\nmid$ y)] $\Rightarrow$ [2|(x + y)]
 
 </details>
