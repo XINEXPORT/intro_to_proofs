@@ -1,14 +1,35 @@
 \documentclass{article}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{centernot}
 
-\title{De Morgan's for Three in Algebraic Notation}
+\title{De Morgan's for Three in Boolean Algebra}
 \author{Christine Hoang}
-\date{May 2026}
+\date{May 30 2026}
 
 \begin{document}
 
 \maketitle
 
-\section{De Morgan's for Three in Algebraic Notation}
+\section{De Morgan's for Three in Boolean Algebra}
+
+Use Boolean Algebra to show that the following are logically
+equivalent:
+\[
+\neg(p \vee q \vee r) \equiv \neg p \wedge \neg q \wedge \neg r
+\]
+
+\subsection*{Proof}
+
+\begin{align*}
+\neg(p \vee q \vee r)
+&\equiv \neg((p \vee q) \vee r) && \text{(Associativity)} \\
+&\equiv \neg(p \vee q) \wedge \neg r && \text{(De Morgan's Law)} \\
+&\equiv (\neg p \wedge \neg q) \wedge \neg r && \text{(De Morgan's Law)} \\
+&\equiv \neg p \wedge \neg q \wedge \neg r && \text{(Associativity)} \qquad \square
+\end{align*}
 
 \end{document}

@@ -51,4 +51,4 @@ cleansets:
 	cd sets && rm -f *.aux *.log *.pdf
 
 clean:
-	find . \( -name "*.aux" -o -name "*.log" -o -name "*.pdf" \) | xargs rm -f
+	find . \( -name "*.aux" -o -name "*.log" -o -name "*.pdf" -o -name "*.gz" \) | xargs rm -f
